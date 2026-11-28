@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -6,203 +5,429 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Legends Garage — Gerencie sua coleção de automóveis.">
+
     <title>Legends Garage | My Collection</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
     <script src="js/script.js" defer></script>
 </head>
-
+ 
 <body>
 
-    <header class="header">
+    <div class="layout">
 
-        <a href="#inicio" class="logo">
-            <span class="logo-car">LEGENDS</span>
-            <span class="logo-garage">GARAGE</span>
-        </a>
+        <aside class="sidebar">
 
-        <div class="header-divider"></div>
+            <a href="#dashboard" class="logo">
+                <span>LEGENDS</span>
+                <strong>GARAGE<span>.</span></strong>
+            </a>
 
-        <p class="slogan">
-            MORE THAN CARS. A COLLECTION.
-        </p>
+            <span class="menu-label">MENU PRINCIPAL</span>
 
-        <div class="header-icons">
+            <nav class="navigation">
 
-            <button aria-label="Pesquisar" class="icon-button">🔍</button>
+                <a href="#dashboard" class="nav-link active">
+                    <span class="nav-icon">▦</span>
+                    Dashboard
+                </a>
 
-            <div class="header-divider"></div>
+                <a href="#colecao" class="nav-link">
+                    <span class="nav-icon">▤</span>
+                    Minha Coleção
+                </a>
 
-            <button aria-label="Perfil" class="icon-button">👤</button>
+                <a href="#garagem" class="nav-link">
+                    <span class="nav-icon">◈</span>
+                    Garagem
+                </a>
 
-        </div>
+                <a href="#concessionaria" class="nav-link">
+                    <span class="nav-icon">＋</span>
+                    Concessionária
+                </a>
 
-    </header>
+                <a href="#sobre" class="nav-link">
+                    <span class="nav-icon">ⓘ</span>
+                    Sobre
+                </a>
 
+            </nav>
 
-    <main id="inicio" class="hero">
-
-        <div class="hero-background"></div>
-
-        <section class="hero-content">
-
-            <div class="section-indicator"></div>
-
-            <h1>
-                MY <span>COLLECTION</span>
-            </h1>
-
-            <p class="subtitle">
-                SUA COLEÇÃO, SEU ESTILO, SUA <span>PAIXÃO</span>
-            </p>
-
-            <div class="car-information">
-
-                <p class="car-brand">PORSCHE</p>
-
-                <h2>
-                    911 GT3 <span>RS</span>
-                </h2>
-
-                <p class="car-year">
-                    2024 · SUPERCARRO ESPORTIVO
-                </p>
-
+            <div class="sidebar-bottom">
+                <span>LEGENDS GARAGE</span>
+                <p>MORE THAN CARS.<br>A COLLECTION.</p>
             </div>
-
-        </section>
-
-
-        <aside class="side-menu">
-
-            <a href="#inicio" class="menu-item active">
-
-                <span class="menu-icon">🏠</span>
-
-                <div>
-                    <strong>MINHA COLEÇÃO</strong>
-                    <small>Explore sua coleção</small>
-                </div>
-
-                <span class="menu-arrow">→</span>
-
-            </a>
-
-
-            <a href="#concessionaria" class="menu-item">
-
-                <span class="menu-icon">🚗</span>
-
-                <div>
-                    <strong>CONCESSIONÁRIA</strong>
-                    <small>Veja os carros em destaque</small>
-                </div>
-
-                <span class="menu-arrow">→</span>
-
-            </a>
-
-
-            <a href="#comparar" class="menu-item">
-
-                <span class="menu-icon">⚖️</span>
-
-                <div>
-                    <strong>COMPARAR</strong>
-                    <small>Compare seus carros</small>
-                </div>
-
-                <span class="menu-arrow">→</span>
-
-            </a>
-
-
-            <a href="#estatisticas" class="menu-item">
-
-                <span class="menu-icon">📊</span>
-
-                <div>
-                    <strong>ESTATÍSTICAS</strong>
-                    <small>Veja suas estatísticas</small>
-                </div>
-
-                <span class="menu-arrow">→</span>
-
-            </a>
-
-
-            <a href="#sobre" class="menu-item">
-
-                <span class="menu-icon">ⓘ</span>
-
-                <div>
-                    <strong>SOBRE</strong>
-                    <small>Conheça o projeto</small>
-                </div>
-
-                <span class="menu-arrow">→</span>
-
-            </a>
 
         </aside>
 
-    </main>
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+                    <span class="topbar-subtitle">PERSONAL AUTOMOTIVE COLLECTION</span>
+                    <h1>MY COLLECTION<span>.</span></h1>
+                </div>
+
+                <div class="topbar-status">
+                    <span class="status-dot"></span>
+                    SISTEMA DE COLEÇÃO
+                </div>
+
+            </header>
 
 
-    <section id="garagem" class="placeholder-section">
+            <section id="dashboard" class="page-section">
 
-        <h2>MINHA <span>GARAGEM</span></h2>
+                <div class="welcome-section">
 
-        <p>Seus veículos serão apresentados aqui.</p>
+                    <div class="welcome-content">
+                        <span class="section-tag">BEM-VINDO À SUA GARAGEM</span>
 
-    </section>
+                        <h2>YOUR CARS.<br><span>YOUR LEGACY.</span></h2>
 
+                        <p>
+                            Um espaço para organizar, acompanhar
+                            e valorizar cada automóvel da sua coleção.
+                        </p>
 
-    <section id="concessionaria" class="placeholder-section">
+                        <a href="#colecao" class="primary-button">
+                            EXPLORAR COLEÇÃO
+                            <span>→</span>
+                        </a>
+                    </div>
 
-        <h2>CONCESSIONÁRIA</h2>
+                    <div class="welcome-image">
+                        <img
+                            src="assets/images/porsche-destaque.jpg"
+                            alt="Porsche em destaque na Legends Garage"
+                        >
+                        <span class="image-caption">LEGENDS GARAGE / 001</span>
+                    </div>
 
-        <p>Explore os carros em destaque.</p>
-
-    </section>
-
-
-    <section id="comparar" class="placeholder-section">
-
-        <h2>COMPARAR <span>VEÍCULOS</span></h2>
-
-        <p>Área destinada à comparação de veículos.</p>
-
-    </section>
-
-
-    <section id="estatisticas" class="placeholder-section">
-
-        <h2>ESTATÍSTICAS</h2>
-
-        <p>Dados da sua coleção.</p>
-
-    </section>
+                </div>
 
 
-    <section id="sobre" class="placeholder-section">
+                
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">VISÃO GERAL</span>
+                        <h2>RESUMO DA GARAGEM</h2>
+                    </div>
+                </div>
 
-        <h2>SOBRE O <span>PROJETO</span></h2>
+                <div class="stats-grid">
 
-        <p>Legends Garage — More than cars. A collection.</p>
+                    <article class="stat-card">
+                        <span class="stat-icon">▤</span>
+                        <p>VEÍCULOS CADASTRADOS</p>
+                        <strong id="total-veiculos">0</strong>
+                        <span class="stat-description">Total na coleção</span>
+                    </article>
 
-    </section>
+                    <article class="stat-card">
+                        <span class="stat-icon">◈</span>
+                        <p>VALOR DA COLEÇÃO</p>
+                        <strong id="valor-colecao">R$ 0,00</strong>
+                        <span class="stat-description">Soma dos valores cadastrados</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-icon">⌁</span>
+                        <p>CATEGORIAS</p>
+                        <strong id="total-categorias">0</strong>
+                        <span class="stat-description">Categorias representadas</span>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-icon">◉</span>
+                        <p>ÚLTIMO CADASTRO</p>
+                        <strong id="ultimo-cadastro">--</strong>
+                        <span class="stat-description">Registro mais recente</span>
+                    </article>
+
+                </div>
 
 
-    <footer class="footer">
+                <div class="section-heading activity-heading">
+                    <div>
+                        <span class="section-tag">ACOMPANHAMENTO</span>
+                        <h2>VISÃO DA COLEÇÃO</h2>
+                    </div>
 
-        <p>LEGENDS GARAGE · 2026</p>
+                    <a href="#colecao" class="text-link">VER COLEÇÃO →</a>
+                </div>
 
-        <span class="footer-slogan">
-            DRIVE YOUR LEGEND
-        </span>
+                <div class="empty-state">
+                    <span class="empty-icon">▤</span>
+                    <h3>SUA GARAGEM COMEÇA AQUI</h3>
+                    <p>Os veículos cadastrados aparecerão na sua coleção.</p>
+                    <a href="#concessionaria" class="text-link">
+                        CADASTRAR PRIMEIRO VEÍCULO →
+                    </a>
+                </div>
 
-    </footer>
+            </section>
+
+
+            <section id="colecao" class="page-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">SEUS AUTOMÓVEIS</span>
+                        <h2>MINHA COLEÇÃO</h2>
+                        <p class="section-description">
+                            Consulte e gerencie os veículos cadastrados.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="collection-tools">
+
+                    <input
+                        type="search"
+                        id="pesquisa-carro"
+                        placeholder="Pesquisar por marca ou modelo..."
+                    >
+
+                    <select id="filtro-categoria">
+                        <option value="">Todas as categorias</option>
+                        <option value="Esportivo">Esportivo</option>
+                        <option value="Clássico">Clássico</option>
+                        <option value="Supercarro">Supercarro</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Sedan">Sedan</option>
+                    </select>
+
+                </div>
+
+                <div id="lista-veiculos" class="vehicle-grid">
+
+                    <div class="empty-state">
+                        <span class="empty-icon">▤</span>
+                        <h3>NENHUM VEÍCULO CADASTRADO</h3>
+                        <p>Seus veículos aparecerão aqui depois do cadastro.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+       
+            <section id="garagem" class="page-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">ORGANIZAÇÃO</span>
+                        <h2>SUA GARAGEM</h2>
+                        <p class="section-description">
+                            Explore a organização dos veículos por categoria.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category-grid">
+
+                    <article class="category-card">
+                        <span>01</span>
+                        <h3>ESPORTIVOS</h3>
+                        <p>Desempenho e engenharia automotiva.</p>
+                    </article>
+
+                    <article class="category-card">
+                        <span>02</span>
+                        <h3>CLÁSSICOS</h3>
+                        <p>Modelos que marcaram gerações.</p>
+                    </article>
+
+                    <article class="category-card">
+                        <span>03</span>
+                        <h3>SUPERCARROS</h3>
+                        <p>Potência, tecnologia e exclusividade.</p>
+                    </article>
+
+                    <article class="category-card">
+                        <span>04</span>
+                        <h3>OUTROS</h3>
+                        <p>Outras categorias da coleção.</p>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+        
+            <section id="concessionaria" class="page-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">GERENCIAMENTO DE VEÍCULOS</span>
+                        <h2>CONCESSIONÁRIA</h2>
+                        <p class="section-description">
+                            Cadastre um automóvel e adicione-o à sua coleção.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="form-container">
+
+                    <form id="form-veiculo">
+
+                        <div class="form-heading">
+                            <span class="section-tag">NOVO REGISTRO</span>
+                            <h3>INFORMAÇÕES DO VEÍCULO</h3>
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label for="marca">Marca</label>
+                                <input
+                                    type="text"
+                                    id="marca"
+                                    name="marca"
+                                    placeholder="Ex.: Porsche"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="modelo">Modelo</label>
+                                <input
+                                    type="text"
+                                    id="modelo"
+                                    name="modelo"
+                                    placeholder="Ex.: 911 Carrera"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ano">Ano</label>
+                                <input
+                                    type="number"
+                                    id="ano"
+                                    name="ano"
+                                    placeholder="Ex.: 2024"
+                                    min="1886"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preco">Preço (R$)</label>
+                                <input
+                                    type="number"
+                                    id="preco"
+                                    name="preco"
+                                    placeholder="Ex.: 850000"
+                                    min="0"
+                                    step="0.01"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="potencia">Potência (CV)</label>
+                                <input
+                                    type="number"
+                                    id="potencia"
+                                    name="potencia"
+                                    placeholder="Ex.: 450"
+                                    min="1"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="categoria">Categoria</label>
+                                <select id="categoria" name="categoria" required>
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="Esportivo">Esportivo</option>
+                                    <option value="Clássico">Clássico</option>
+                                    <option value="Supercarro">Supercarro</option>
+                                    <option value="SUV">SUV</option>
+                                    <option value="Sedan">Sedan</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="cor">Cor</label>
+                                <input
+                                    type="text"
+                                    id="cor"
+                                    name="cor"
+                                    placeholder="Ex.: Preto"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="reset" class="secondary-button">
+                                LIMPAR CAMPOS
+                            </button>
+
+                            <button type="submit" class="primary-button">
+                                CADASTRAR VEÍCULO →
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <section id="sobre" class="page-section">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">NOSSA IDENTIDADE</span>
+                        <h2>SOBRE A LEGENDS GARAGE</h2>
+                    </div>
+                </div>
+
+                <div class="about-container">
+
+                    <span class="about-number">LG / 001</span>
+
+                    <h3>MORE THAN CARS.<br><span>A COLLECTION.</span></h3>
+
+
+                    <div class="about-footer">
+                        <span>SUA GARAGEM, SUA HISTÓRIA</span>
+                        <span>SUA COLEÇÃO,SUA IDENTIDADE.</span>
+                        <span>DESCUBRA O UNIVERSO AUTOMOTIVO </span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        
+            <footer class="footer">
+                <span>LEGENDS GARAGE © 2026</span>
+                <span>MORE THAN CARS. A COLLECTION.</span>
+            </footer>
+
+        </main>
+
+    </div>
 
 </body>
 </html>
